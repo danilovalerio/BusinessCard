@@ -30,6 +30,16 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+
+    viewBinding {
+        enabled = true
+    }
+}
+
+kotlin {
+    experimental {
+        coroutines 'enable'
+    }
 }
 
 dependencies {
